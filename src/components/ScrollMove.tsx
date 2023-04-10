@@ -1,8 +1,7 @@
-import React from 'react';
-import { Link } from 'react-scroll';
-import styled from 'styled-components';
+import { Link } from "react-scroll";
+import styled from "styled-components";
 
-const ScrollMove= () => {
+const ScrollMove = () => {
   return (
     <SideBlock>
       <div>

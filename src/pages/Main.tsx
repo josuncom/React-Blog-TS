@@ -1,4 +1,4 @@
-import React,{ useEffect } from "react";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import Home from "./Home";
@@ -12,23 +12,22 @@ import "../components/Main.css";
 
 import { Fragment } from "react";
 
-
-export default function Main(){
+export default function Main() {
   const { pathname } = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  return(
+  return (
     <Fragment>
-      <Navigation/>
-        <Home/>
-        <About/>
-        <Project/>
-        <Profile/>
-        <Connect/>
-        <Footer/>
+      <Navigation />
+      <Home />
+      <About />
+      <Project />
+      <Profile />
+      <Connect />
+      <Footer />
     </Fragment>
-  )
+  );
 }
